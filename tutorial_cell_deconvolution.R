@@ -22,9 +22,6 @@ spatial <- RunUMAP(spatial, dims = 1:30)
 
 Idents(KBR) <- KBR@meta.data$subclass.l2
 
-KBR <- SCTransform(KBR, verbose = FALSE)
-
-
 ## Run Deconvolution
 
 label = "subclass.l2"
