@@ -61,4 +61,3 @@ ftr <-      "dPOD"
 
 plot <- SpatialFeaturePlot(kidney, features = ftr) + theme(legend.position = "right")
 
-SpatialFeaturePlot(kidney, features = ftr, interactive = TRUE)
