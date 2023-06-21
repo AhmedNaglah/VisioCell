@@ -4,10 +4,10 @@ library(SeuratDisk)
 ## Inputs
 
 # Single Cell
-KBR <- LoadH5Seurat("/orange/pinaki.sarder/ahmed.naglah/data/Deconvolution/Kidney_Healthy-Injury_Cell_Atlas_snCv3_Seurat_07302021.h5Seurat")
+KBR <- LoadH5Seurat("../Single_Cell_Reference.h5Seurat")
 
 # Spatial Transcriptomics
-sample = "/orange/pinaki.sarder/ahmed.naglah/data/Normalkidney57919085202301"
+sample = "../Visium_Sample"
 spatial <- Load10X_Spatial(paste0(sample,'/outs/'))
 
 ## Preprocess Spatial Transcriptomics
