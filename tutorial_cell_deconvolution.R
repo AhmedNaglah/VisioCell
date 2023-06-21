@@ -58,8 +58,6 @@ library(patchwork)
 library(dplyr)
 
 
-sample = "/orange/pinaki.sarder/ahmed.naglah/data/Kidney_Visium"
-
 kidney <- readRDS(paste0(sample,'_seurat_only.RDS'))
 DefaultAssay(kidney) <- "predictions"
 ftr <-      "dPOD"
