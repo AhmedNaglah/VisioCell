@@ -32,7 +32,6 @@ https://www.10xgenomics.com/products/single-cell-gene-expression
 
 System: x86_64, linux-gnu
 <br>R version 4.2.3 (2023-03-15)
-<br>R version 4.2.3 (2023-03-15)
 
 ### Dependencies:
 
@@ -61,8 +60,14 @@ spatial <- Load10X_Spatial(paste0(sample,'/outs/'))
 Seurat object in RDS file
 
 ```R
-saveRDS(spatial,paste0(sample,'_cell_type_seurat.RDS'))
+saveRDS(spatial,'cell_type_seurat.RDS'))
 
 ```
 
+Cell Type Prediction overlay on histology
+
+```R
+ggsave("../cell_type.jpg", plot = plot)
+
+```
 
