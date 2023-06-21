@@ -30,23 +30,21 @@ https://www.10xgenomics.com/products/single-cell-gene-expression
 
 ### Environment:
 
-RStudio 2023.06.0+421 "Mountain Hydrangea" Release (583b465ecc45e60ee9de085148cd2f9741cc5214, 2023-06-06) for Ubuntu Jammy
-
-R version 4.2.3 (2023-03-15)
+System: x86_64, linux-gnu
+<br>R version 4.2.3 (2023-03-15)
+<br>R version 4.2.3 (2023-03-15)
 
 ### Dependencies:
 
 Seurat
-
-SeuratData
-
-ggplot2
-
-patchwork
-
-dplyr
+<br>SeuratData
+<br>ggplot2
+<br>patchwork
+<br>dplyr
 
 ### Input:
+
+Visium and Chromium Data Files
 
 ```R
 # Single Cell
@@ -57,3 +55,14 @@ sample = "../Visium_Sample"
 spatial <- Load10X_Spatial(paste0(sample,'/outs/'))
 
 ```
+
+### Output:
+
+Seurat object in RDS file
+
+```R
+saveRDS(spatial,paste0(sample,'_cell_type_seurat.RDS'))
+
+```
+
+
